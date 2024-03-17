@@ -13,6 +13,8 @@ export const AppStyled = styled.div`
 `;
 
 export const HeaderHeroWrapper = styled.div`
+  position: relative;
+
   max-width: 464px;
   width: 100%;
   height: 542px;

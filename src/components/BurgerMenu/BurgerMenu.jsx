@@ -1,23 +1,33 @@
-import { BurgerMenuWrapper, NavItem, NavList } from './BurgerMenu.styled';
+import { BurgerMenuWrapper, NavItem, NavList, Span } from './BurgerMenu.styled';
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ isOpen }) => {
   return (
     <BurgerMenuWrapper>
       <NavList>
-        <NavItem>
-          <a href="/">ABOUT</a>
+        <NavItem isOpen={isOpen}>
+          <a href="/">
+            <Span>ABOUT</Span>
+          </a>
         </NavItem>
-        <NavItem>
-          <a href="/">M-MAP</a>
+        <NavItem isOpen={isOpen}>
+          <a href="/">
+            <Span>M-MAP</Span>
+          </a>
         </NavItem>
-        <NavItem>
-          <a href="/">FAQ</a>
+        <NavItem isOpen={isOpen}>
+          <a href="/">
+            <Span>FAQ</Span>
+          </a>
         </NavItem>
-        <NavItem>
-          <a href="/">ARTS</a>
+        <NavItem isOpen={isOpen}>
+          <a href="/">
+            <Span>ARTS</Span>
+          </a>
         </NavItem>
-        <NavItem>
-          <a href="/">MINT</a>
+        <NavItem isOpen={isOpen}>
+          <a href="/">
+            <Span>MINT</Span>
+          </a>
         </NavItem>
       </NavList>
     </BurgerMenuWrapper>

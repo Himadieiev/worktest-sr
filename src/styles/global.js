@@ -25,4 +25,8 @@ body {
 .body-no-scroll {
   overflow: hidden;
 }
+
+a{
+  color: inherit
+}
 `;

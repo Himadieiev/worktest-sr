@@ -19,11 +19,14 @@ export const App = () => {
   return (
     <AppStyled>
       {isSmallScreen && isBurgerMenuOpen ? (
-        <BurgerMenu />
+        <HeaderHeroWrapper>
+          <Header toggleBurgerMenu={toggleBurgerMenu} isOpen={isBurgerMenuOpen} />
+          <BurgerMenu isOpen={isBurgerMenuOpen} />
+        </HeaderHeroWrapper>
       ) : (
         <>
           <HeaderHeroWrapper>
-            <Header toggleBurgerMenu={toggleBurgerMenu} />
+            <Header isBurgerMenuOpen={isBurgerMenuOpen} toggleBurgerMenu={toggleBurgerMenu} />
             <Hero />
             {isBurgerMenuOpen && <BurgerMenu />}
           </HeaderHeroWrapper>
