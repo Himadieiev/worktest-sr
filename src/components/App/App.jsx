@@ -9,10 +9,10 @@ import MovingBanner from '../About/MovingBanner/MovingBanner';
 import MindMap from '../MindMap/MindMap';
 import FAQ from '../FAQ/FAQ';
 import Arts from '../Arts/Arts';
-
-import { AppStyled, Container, HeaderHeroWrapper } from './App.styled';
 import ContactUs from '../ContactUs/ContactUs';
 import Footer from '../Footer/Footer';
+
+import { AppStyled, Container, HeaderHeroWrapper } from './App.styled';
 
 export const App = () => {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
