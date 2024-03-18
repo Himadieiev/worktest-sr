@@ -5,13 +5,7 @@ import { MovingBannerWrapper, Text, CrossIconStyled } from './MovingBanner.style
 const MovingBanner = () => {
   return (
     <MovingBannerWrapper>
-      <Marquee>
-        <Text>Destroy stereotypes</Text>
-        <CrossIconStyled />
-        <Text>HAVE NO LIMITS</Text>
-        <CrossIconStyled />
-        <Text>Break rules</Text>
-        <CrossIconStyled />
+      <Marquee pauseOnHover={true} speed={30} autoFill={true}>
         <Text>Destroy stereotypes</Text>
         <CrossIconStyled />
         <Text>HAVE NO LIMITS</Text>

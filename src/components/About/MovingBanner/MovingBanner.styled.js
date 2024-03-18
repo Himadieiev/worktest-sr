@@ -13,6 +13,7 @@ export const MovingBannerWrapper = styled.div`
   display: flex;
 
   background-color: ${p => p.theme.colors.general.red};
+  cursor: pointer;
 
   @media (min-width: ${p => p.theme.screens.desk}) {
     height: 86px;
@@ -24,7 +25,7 @@ export const Text = styled.span`
 
   font-family: ${p => p.theme.fonts.first};
   font-size: 36px;
-  line-height: 100%;
+  line-height: 0.6;
   text-transform: uppercase;
 
   color: ${p => p.theme.colors.general.white};
@@ -36,7 +37,6 @@ export const Text = styled.span`
 `;
 
 export const CrossIconStyled = styled(CrossIcon)`
-  margin-top: 10px;
   margin-right: 24px;
 
   width: 36px;
