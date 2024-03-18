@@ -25,9 +25,6 @@ export const BurgerMenuWrapper = styled.nav`
     background-color: transparent;
   }
 
-  @media (min-width: ${p => p.theme.screens.tab}) {
-  }
-
   @media (min-width: ${p => p.theme.screens.desk}) {
     height: calc(100vh - 16px);
   }
@@ -102,6 +99,7 @@ export const NavItem = styled.li`
   text-transform: uppercase;
 
   color: ${p => p.theme.colors.general.white};
+  cursor: pointer;
 
   transition: all ${p => p.theme.transition.hover};
 

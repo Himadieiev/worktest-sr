@@ -36,7 +36,7 @@ const About = () => {
   }
 
   return (
-    <AboutWrapper>
+    <AboutWrapper id="about">
       <Title>
         a Story that started with{' '}
         <span>

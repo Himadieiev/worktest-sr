@@ -25,11 +25,7 @@ export const HeaderHeroWrapper = styled.div`
   padding: 8px 8px 0 8px;
 
   border-radius: ${p => p.theme.radius.sm};
-  background: #dc3b5a;
-
-  /* @media (min-width: ${p => p.theme.screens.mobMin}) {
-    width: 344px;
-  } */
+  background-color: #dc3b5a;
 
   @media (min-width: ${p => p.theme.screens.tab}) {
     max-width: 736px;
