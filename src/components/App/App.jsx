@@ -6,6 +6,8 @@ import Hero from '../Hero/Hero';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 import { AppStyled, Container, HeaderHeroWrapper } from './App.styled';
+import About from '../About/About';
+import MovingBanner from '../About/MovingBanner/MovingBanner';
 
 export const App = () => {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -30,6 +32,12 @@ export const App = () => {
             <Hero />
             {isBurgerMenuOpen && <BurgerMenu />}
           </HeaderHeroWrapper>
+
+          <Container>
+            <About />
+          </Container>
+
+          <MovingBanner />
 
           <Container></Container>
         </>

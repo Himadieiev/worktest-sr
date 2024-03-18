@@ -44,12 +44,12 @@ const Hero = () => {
         <span>APES</span>
       </MainTitle>
       <TextTwo>Apes aRe eveRywhere</TextTwo>
-      <ImageStyled src={imgSrc} alt="banner" />
+      <ImageStyled src={imgSrc} alt="monkey" />
       <Wrapper>
         <Button>Meet Apes</Button>
         <TextThree>
-          <span>{'              '}</span>Yacht Ape is a collection of unique digital apes that you
-          can own in NFT format
+          <span> </span>Yacht Ape is a collection of unique digital apes that you can own in NFT
+          format
         </TextThree>
       </Wrapper>
     </HeroWrapper>

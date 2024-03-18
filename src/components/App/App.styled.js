@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const AppStyled = styled.div`
+  position: relative;
+
   padding: 54px 8px 0 8px;
 
   @media (min-width: ${p => p.theme.screens.tab}) {
@@ -25,6 +27,10 @@ export const HeaderHeroWrapper = styled.div`
   border-radius: ${p => p.theme.radius.sm};
   background: #dc3b5a;
 
+  /* @media (min-width: ${p => p.theme.screens.mobMin}) {
+    width: 344px;
+  } */
+
   @media (min-width: ${p => p.theme.screens.tab}) {
     max-width: 736px;
     height: 421px;
@@ -43,18 +49,18 @@ export const HeaderHeroWrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 360px;
-  padding: 0 72px;
+  width: 344px;
+  padding: 0 64px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: ${p => p.theme.screens.tab}) {
-    width: 768px;
-    padding: 0 88px;
+    width: 736px;
+    padding: 0 72px;
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
-    width: 1440px;
-    padding: 0 204px;
+    width: 1408px;
+    padding: 0 188px;
   }
 `;
