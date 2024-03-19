@@ -194,6 +194,11 @@ export const Button = styled.button`
   border-radius: ${p => p.theme.radius.xs};
   backdrop-filter: blur(12px);
   background-color: ${p => p.theme.colors.bg.semiTrDark};
+  transition: all ${p => p.theme.transition.hover};
+
+  &:hover {
+    color: ${p => p.theme.colors.general.white};
+  }
 
   @media (min-width: ${p => p.theme.screens.tab}) {
     width: 190px;

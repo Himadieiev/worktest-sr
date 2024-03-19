@@ -12,9 +12,13 @@ const FAQItem = ({ item, isActive, onItemClick, index }) => {
       <ImageWrapper isActive={isActive}>
         <img src={imgSrc} alt="monkey" />
       </ImageWrapper>
-      <Number isActive={isActive}>{number}</Number>
+      <Number className="number" isActive={isActive}>
+        {number}
+      </Number>
       <Wrapper>
-        <Question isActive={isActive}>{question}</Question>
+        <Question className="question" isActive={isActive}>
+          {question}
+        </Question>
         <Answer isActive={isActive}>{answer}</Answer>
       </Wrapper>
     </FAQItemWrapper>

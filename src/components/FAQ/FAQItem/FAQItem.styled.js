@@ -19,6 +19,16 @@ export const FAQItemWrapper = styled.div`
   border-radius: ${p => p.theme.radius.sm};
   cursor: pointer;
 
+  &:hover {
+    .number {
+      color: ${p => p.theme.colors.general.white};
+    }
+
+    .question {
+      color: ${p => p.theme.colors.general.red};
+    }
+  }
+
   @media (min-width: ${p => p.theme.screens.tab}) {
     width: 592px;
     padding-left: 16px;
