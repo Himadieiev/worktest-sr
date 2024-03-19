@@ -3,6 +3,7 @@ import { useMediaQuery } from '@uidotdev/usehooks';
 import heroImgMob from '../../assets/images/hero-mob.png';
 import heroImgTab from '../../assets/images/hero-tab.png';
 import heroImgDesk from '../../assets/images/hero-desk.png';
+import { scrollToSection } from '../../utils/scrollToSection';
 
 import {
   Button,
@@ -46,7 +47,9 @@ const Hero = () => {
       <TextTwo>Apes aRe eveRywhere</TextTwo>
       <ImageStyled src={imgSrc} alt="monkey" />
       <Wrapper>
-        <Button>Meet Apes</Button>
+        <Button type="button" onClick={() => scrollToSection('mint')}>
+          Meet Apes
+        </Button>
         <TextThree>
           <span> </span>Yacht Ape is a collection of unique digital apes that you can own in NFT
           format

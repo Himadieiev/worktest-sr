@@ -25,21 +25,21 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
       </Btn>
       <SocialLinks>
         <li>
-          <a href="/">
+          <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
             <Btn isOpen={isOpen}>
               <DiscordIconStyled isOpen={isOpen} />
             </Btn>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
             <Btn isOpen={isOpen}>
               <ShipIconStyled isOpen={isOpen} />
             </Btn>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
             <Btn isOpen={isOpen}>
               <TwitterIconStyled isOpen={isOpen} />
             </Btn>
