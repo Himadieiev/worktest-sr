@@ -1,4 +1,4 @@
-import { scrollToSection } from '../../utils/scrollToSection';
+import { scrollToSection } from '../../../utils/scrollToSection';
 
 import { ArrowIconStyled, LinkItem, MindMapItemWrapper, Text, Title } from './MindMapItem.styled';
 

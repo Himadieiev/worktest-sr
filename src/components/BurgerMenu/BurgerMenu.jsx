@@ -1,31 +1,27 @@
 import Footer from '../Footer/Footer';
+import { scrollToSection } from '../../utils/scrollToSection';
+
 import { BurgerMenuWrapper, NavItem, NavList, Span } from './BurgerMenu.styled';
 
 const BurgerMenu = ({ isOpen, toggle }) => {
-  const scrollToSection = id => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-      });
-    }
-
+  const handleClick = id => {
+    scrollToSection(id);
     toggle();
   };
 
   return (
     <BurgerMenuWrapper>
       <NavList>
-        <NavItem isOpen={isOpen} onClick={() => scrollToSection('about')}>
+        <NavItem isOpen={isOpen} onClick={() => handleClick('about')}>
           <Span>ABOUT</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => scrollToSection('m-map')}>
+        <NavItem isOpen={isOpen} onClick={() => handleClick('m-map')}>
           <Span>M-MAP</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => scrollToSection('faq')}>
+        <NavItem isOpen={isOpen} onClick={() => handleClick('faq')}>
           <Span>FAQ</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => scrollToSection('arts')}>
+        <NavItem isOpen={isOpen} onClick={() => handleClick('arts')}>
           <Span>ARTS</Span>
         </NavItem>
         <NavItem isOpen={isOpen} onClick={() => scrollToSection('mint')}>
