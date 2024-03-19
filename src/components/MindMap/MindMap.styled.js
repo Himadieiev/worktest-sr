@@ -11,3 +11,9 @@ export const MindMapWrapper = styled.section`
     padding-top: 206px;
   }
 `;
+
+export const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+`;

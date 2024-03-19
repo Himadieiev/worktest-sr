@@ -24,12 +24,22 @@ export const App = () => {
   const isSmallScreen = useMediaQuery('(max-width: 479px)');
 
   return (
-    <AppStyled>
+    <AppStyled id="start">
       {isSmallScreen && isBurgerMenuOpen ? (
-        <HeaderHeroWrapper>
-          <Header toggleBurgerMenu={toggleBurgerMenu} isOpen={isBurgerMenuOpen} />
-          <BurgerMenu isOpen={isBurgerMenuOpen} toggle={toggleBurgerMenu} />
-        </HeaderHeroWrapper>
+        <>
+          <HeaderHeroWrapper>
+            <Header toggleBurgerMenu={toggleBurgerMenu} isOpen={isBurgerMenuOpen} />
+            <BurgerMenu isOpen={isBurgerMenuOpen} toggle={toggleBurgerMenu} />
+          </HeaderHeroWrapper>
+          <Container style={{ visibility: 'hidden' }}>
+            <About />
+            <MindMap />
+            <FAQ />
+            <Arts />
+            <ContactUs />
+            <Footer />
+          </Container>
+        </>
       ) : (
         <>
           <HeaderHeroWrapper>
