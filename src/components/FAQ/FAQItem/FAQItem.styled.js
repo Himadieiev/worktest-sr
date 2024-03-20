@@ -97,6 +97,7 @@ export const Number = styled.p`
   @media (min-width: ${p => p.theme.screens.tab}) {
     width: 35px;
     margin-right: 19px;
+    margin-top: 2px;
 
     font-size: 16px;
     line-height: 169%;
@@ -105,6 +106,7 @@ export const Number = styled.p`
   @media (min-width: ${p => p.theme.screens.desk}) {
     width: 52px;
     margin-right: 24px;
+    margin-top: 10px;
 
     font-size: 24px;
     line-height: 167%;

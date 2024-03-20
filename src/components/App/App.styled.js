@@ -38,9 +38,13 @@ export const HeaderHeroWrapper = styled.div`
   @media (min-width: ${p => p.theme.screens.desk}) {
     max-width: 1408px;
     height: 677px;
-    padding: 24px 96px 0 96px;
+    padding: 24px 12px 0 12px;
 
     border-radius: ${p => p.theme.radius.lg};
+  }
+
+  @media (min-width: 1440px) {
+    padding: 24px 96px 0 96px;
   }
 `;
 

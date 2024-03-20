@@ -7,6 +7,7 @@ export const ArtItemWrapper = styled.div`
 
   border-radius: ${p => p.theme.radius.sm};
   overflow: hidden;
+  cursor: grab;
 
   @media (min-width: ${p => p.theme.screens.tab}) {
     width: 284px;

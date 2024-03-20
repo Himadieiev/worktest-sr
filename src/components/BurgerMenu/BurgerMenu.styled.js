@@ -18,6 +18,7 @@ export const BurgerMenuWrapper = styled.nav`
   background-color: ${p => p.theme.colors.bg.dark};
 
   @media (min-width: ${p => p.theme.screens.mobMax}) {
+    height: 56px;
     padding-bottom: 0px;
 
     display: block;
@@ -25,8 +26,12 @@ export const BurgerMenuWrapper = styled.nav`
     background-color: transparent;
   }
 
+  @media (min-width: ${p => p.theme.screens.tab}) {
+    height: 60px;
+  }
+
   @media (min-width: ${p => p.theme.screens.desk}) {
-    height: calc(100vh - 16px);
+    height: 104px;
   }
 `;
 
@@ -61,11 +66,15 @@ export const NavList = styled.ul`
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
-    right: 176px;
+    right: 92px;
     top: 24px;
 
     width: 400px;
     height: 80px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 176px;
   }
 `;
 
