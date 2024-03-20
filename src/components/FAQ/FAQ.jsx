@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import Title from '../Common/Title/Title';
+import FAQItem from './FAQItem/FAQItem';
 import { FAQ_DATA } from './../../constants/faqData';
 
 import { FAQList, FAQWrapper } from './FAQ.styled';
-import FAQItem from './FAQItem/FAQItem';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0);

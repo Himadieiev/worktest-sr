@@ -24,6 +24,6 @@ export const Btn = styled.button`
   color: ${p => p.theme.colors.general.white};
 
   &:disabled {
-    color: grey;
+    color: ${p => p.theme.colors.general.grey};
   }
 `;

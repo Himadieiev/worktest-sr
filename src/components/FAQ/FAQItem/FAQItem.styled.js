@@ -6,16 +6,16 @@ export const FAQItemWrapper = styled.div`
   width: 216px;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: ${p => (p.isActive ? '8px' : '0px')};
-  padding-bottom: ${p => (p.isActive ? '8px' : '0px')};
-  margin-top: ${p => (p.isActive ? '-8px' : '0px')};
-  margin-bottom: ${p => (p.isActive ? '-8px' : '0px')};
+  padding-top: ${p => (p.$isActive ? '8px' : '0px')};
+  padding-bottom: ${p => (p.$isActive ? '8px' : '0px')};
+  margin-top: ${p => (p.$isActive ? '-8px' : '0px')};
+  margin-bottom: ${p => (p.$isActive ? '-8px' : '0px')};
 
   display: flex;
   align-items: center;
 
   transition: all ${p => p.theme.transition.hover};
-  background-color: ${p => (p.isActive ? p.theme.colors.bg.grey : 'transperent')};
+  background-color: ${p => (p.$isActive ? p.theme.colors.bg.grey : 'transperent')};
   border-radius: ${p => p.theme.radius.sm};
   cursor: pointer;
 
@@ -33,10 +33,10 @@ export const FAQItemWrapper = styled.div`
     width: 592px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: ${p => (p.isActive ? '18px' : '0px')};
-    padding-bottom: ${p => (p.isActive ? '18px' : '0px')};
-    margin-top: ${p => (p.isActive ? '-18px' : '0px')};
-    margin-bottom: ${p => (p.isActive ? '-18px' : '0px')};
+    padding-top: ${p => (p.$isActive ? '18px' : '0px')};
+    padding-bottom: ${p => (p.$isActive ? '18px' : '0px')};
+    margin-top: ${p => (p.$isActive ? '-18px' : '0px')};
+    margin-bottom: ${p => (p.$isActive ? '-18px' : '0px')};
 
     border-radius: ${p => p.theme.radius.md};
   }
@@ -45,10 +45,10 @@ export const FAQItemWrapper = styled.div`
     width: 1032px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: ${p => (p.isActive ? '24px' : '0px')};
-    padding-bottom: ${p => (p.isActive ? '24px' : '0px')};
-    margin-top: ${p => (p.isActive ? '-24px' : '0px')};
-    margin-bottom: ${p => (p.isActive ? '-24px' : '0px')};
+    padding-top: ${p => (p.$isActive ? '24px' : '0px')};
+    padding-bottom: ${p => (p.$isActive ? '24px' : '0px')};
+    margin-top: ${p => (p.$isActive ? '-24px' : '0px')};
+    margin-bottom: ${p => (p.$isActive ? '-24px' : '0px')};
 
     border-radius: ${p => p.theme.radius.lg};
   }
@@ -60,7 +60,7 @@ export const ImageWrapper = styled.div`
   @media (min-width: ${p => p.theme.screens.tab}) {
     position: absolute;
 
-    display: ${p => (p.isActive ? 'block' : 'none')};
+    display: ${p => (p.$isActive ? 'block' : 'none')};
 
     width: 148px;
     height: 183px;
@@ -92,7 +92,7 @@ export const Number = styled.p`
   line-height: 167%;
 
   transition: all ${p => p.theme.transition.hover};
-  color: ${p => (p.isActive ? p.theme.colors.general.white : p.theme.colors.general.red)};
+  color: ${p => (p.$isActive ? p.theme.colors.general.white : p.theme.colors.general.red)};
 
   @media (min-width: ${p => p.theme.screens.tab}) {
     width: 35px;
@@ -140,7 +140,7 @@ export const Question = styled.p`
   text-transform: uppercase;
 
   transition: all ${p => p.theme.transition.hover};
-  color: ${p => (p.isActive ? p.theme.colors.general.red : p.theme.colors.general.white)};
+  color: ${p => (p.$isActive ? p.theme.colors.general.red : p.theme.colors.general.white)};
 
   @media (min-width: ${p => p.theme.screens.tab}) {
     font-size: 32px;
@@ -152,7 +152,7 @@ export const Question = styled.p`
 `;
 
 export const Answer = styled.p`
-  display: ${p => (p.isActive ? 'block' : 'none')};
+  display: ${p => (p.$isActive ? 'block' : 'none')};
 
   font-family: ${p => p.theme.fonts.second};
   font-size: 12px;

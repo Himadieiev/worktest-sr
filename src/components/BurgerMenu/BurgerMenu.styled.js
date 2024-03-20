@@ -73,7 +73,7 @@ export const NavList = styled.ul`
     height: 80px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: ${p => p.theme.screens.deskMax}) {
     right: 176px;
   }
 `;

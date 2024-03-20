@@ -9,7 +9,7 @@ const MindMapItem = ({ item }) => {
     <>
       {icon ? (
         <LinkItem onClick={() => scrollToSection('start')}>
-          <MindMapItemWrapper icon={icon} bgColor={bgColor}>
+          <MindMapItemWrapper $bgColor={bgColor}>
             <ArrowIconStyled />
             <div>
               {title.map((titleItem, index) => (
@@ -19,7 +19,7 @@ const MindMapItem = ({ item }) => {
           </MindMapItemWrapper>
         </LinkItem>
       ) : (
-        <MindMapItemWrapper bgColor={bgColor}>
+        <MindMapItemWrapper $bgColor={bgColor}>
           <Text>{text}</Text>
           <Title>{title}</Title>
         </MindMapItemWrapper>

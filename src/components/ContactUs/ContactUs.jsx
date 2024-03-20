@@ -1,4 +1,5 @@
 import { Formik } from 'formik';
+import { useState } from 'react';
 
 import Title from '../Common/Title/Title';
 import { validateSchema } from '../../utils/validateSchema';
@@ -18,7 +19,6 @@ import {
   Text,
   TextWrapper,
 } from './ContactUs.styled';
-import { useState } from 'react';
 
 const ContactUs = () => {
   const [buttonText, setButtonText] = useState('Mint');

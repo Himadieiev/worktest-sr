@@ -32,7 +32,7 @@ export const MindMapItemWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: ${p => p.bgColor};
+  background-color: ${p => p.$bgColor};
   border-radius: ${p => p.theme.radius.sm};
 
   &:hover {

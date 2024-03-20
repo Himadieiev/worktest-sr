@@ -6,6 +6,7 @@ const theme = {
     mobMax: BREAKPONTS.MOB_END,
     tab: BREAKPONTS.TAB,
     desk: BREAKPONTS.DESK_START,
+    deskMax: BREAKPONTS.DESK_END,
   },
   colors: {
     bg: {

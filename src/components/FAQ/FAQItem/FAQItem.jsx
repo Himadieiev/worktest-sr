@@ -8,18 +8,18 @@ const FAQItem = ({ item, isActive, onItemClick, index }) => {
   };
 
   return (
-    <FAQItemWrapper onClick={handleClick} isActive={isActive}>
-      <ImageWrapper isActive={isActive}>
+    <FAQItemWrapper onClick={handleClick} $isActive={isActive}>
+      <ImageWrapper $isActive={isActive}>
         <img src={imgSrc} alt="monkey" />
       </ImageWrapper>
-      <Number className="number" isActive={isActive}>
+      <Number className="number" $isActive={isActive}>
         {number}
       </Number>
       <Wrapper>
-        <Question className="question" isActive={isActive}>
+        <Question className="question" $isActive={isActive}>
           {question}
         </Question>
-        <Answer isActive={isActive}>{answer}</Answer>
+        <Answer $isActive={isActive}>{answer}</Answer>
       </Wrapper>
     </FAQItemWrapper>
   );

@@ -148,7 +148,7 @@ export const Btn = styled.button`
   }
 
   @media (min-width: ${p => p.theme.screens.mobMax}) {
-    border-top-left-radius: ${p => (p.isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs)};
+    border-top-left-radius: ${p => (p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs)};
     border-bottom-left-radius: ${p =>
       p.isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs};
   }

@@ -19,7 +19,7 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
         type="button"
         onClick={toggleBurgerMenu}
         isOpen={isOpen}
-        isBurgerMenuOpen={isBurgerMenuOpen}
+        $isBurgerMenuOpen={isBurgerMenuOpen}
       >
         {isBurgerMenuOpen || isOpen ? <Span>CLOSE</Span> : <Span>MENU</Span>}
       </Btn>
