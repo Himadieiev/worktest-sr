@@ -19,6 +19,8 @@ const theme = {
       dark: '#1e1e1e',
       white: '#fff',
       red: ' #dc3b5a',
+      blue: '#5A65F2',
+      grey: 'rgba(255, 255, 255, 0.24)',
     },
   },
   fonts: {
