@@ -137,7 +137,8 @@ export const InputStyled = styled(Field)`
   width: 168px;
   height: 48px;
 
-  border: 1px solid ${p => (p.hasError ? p.theme.colors.general.red : p.theme.colors.general.white)};
+  border: 1px solid
+    ${p => (p.$hasError ? p.theme.colors.general.red : p.theme.colors.general.white)};
   background-color: transparent;
   border-top-right-radius: ${p => p.theme.radius.sm};
   border-bottom-right-radius: ${p => p.theme.radius.sm};

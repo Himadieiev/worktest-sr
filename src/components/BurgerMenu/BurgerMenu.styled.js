@@ -113,10 +113,10 @@ export const NavItem = styled.li`
   transition: all ${p => p.theme.transition.hover};
 
   &:hover {
-    color: ${p => (p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    color: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
 
     ${Span}::after {
-      background-color: ${p => (p.isOpen ? 'transparent' : p.theme.colors.general.white)};
+      background-color: ${p => (p.$isOpen ? 'transparent' : p.theme.colors.general.white)};
     }
   }
 

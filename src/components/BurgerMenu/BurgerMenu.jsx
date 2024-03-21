@@ -12,19 +12,19 @@ const BurgerMenu = ({ isOpen, toggle }) => {
   return (
     <BurgerMenuWrapper>
       <NavList>
-        <NavItem isOpen={isOpen} onClick={() => handleClick('about')}>
+        <NavItem $isOpen={isOpen} onClick={() => handleClick('about')}>
           <Span>ABOUT</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => handleClick('m-map')}>
+        <NavItem $isOpen={isOpen} onClick={() => handleClick('m-map')}>
           <Span>M-MAP</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => handleClick('faq')}>
+        <NavItem $isOpen={isOpen} onClick={() => handleClick('faq')}>
           <Span>FAQ</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => handleClick('arts')}>
+        <NavItem $isOpen={isOpen} onClick={() => handleClick('arts')}>
           <Span>ARTS</Span>
         </NavItem>
-        <NavItem isOpen={isOpen} onClick={() => scrollToSection('mint')}>
+        <NavItem $isOpen={isOpen} onClick={() => handleClick('mint')}>
           <Span>MINT</Span>
         </NavItem>
       </NavList>

@@ -28,10 +28,14 @@ export const App = () => {
       {isSmallScreen && isBurgerMenuOpen ? (
         <>
           <HeaderHeroWrapper>
-            <Header toggleBurgerMenu={toggleBurgerMenu} isOpen={isBurgerMenuOpen} />
+            <Header
+              toggleBurgerMenu={toggleBurgerMenu}
+              isOpen={isBurgerMenuOpen}
+              setIsBurgerMenuOpen={setIsBurgerMenuOpen}
+            />
             <BurgerMenu isOpen={isBurgerMenuOpen} toggle={toggleBurgerMenu} />
           </HeaderHeroWrapper>
-          <Container style={{ visibility: 'hidden' }}>
+          <Container>
             <About />
             <MindMap />
             <FAQ />

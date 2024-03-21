@@ -56,7 +56,7 @@ const About = () => {
           BY USERS
         </TextTwo>
       </TextIconWrapper>
-      <ImageStyled src={imgSrc} alt="monkey" />
+      <ImageStyled src={imgSrc} alt="nft-monkey" />
     </AboutWrapper>
   );
 };

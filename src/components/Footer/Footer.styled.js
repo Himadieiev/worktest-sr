@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
-  position: ${p => (p.isOpen ? 'absolute' : 'static')};
+  position: ${p => (p.$isOpen ? 'absolute' : 'static')};
   bottom: 10%;
 
   padding-top: 60px;

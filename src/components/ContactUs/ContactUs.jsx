@@ -62,7 +62,7 @@ const ContactUs = () => {
                   type="text"
                   name="discord"
                   placeholder="@username"
-                  hasError={errors.discord && touched.discord}
+                  $hasError={errors.discord && touched.discord}
                 />
                 <ErrorMessageStyled name="discord" component="div" />
               </Label>
@@ -75,12 +75,12 @@ const ContactUs = () => {
                   type="text"
                   name="wallet"
                   placeholder="Wallet address"
-                  hasError={errors.wallet && touched.wallet}
+                  $hasError={errors.wallet && touched.wallet}
                 />
                 <ErrorMessageStyled name="wallet" component="div" />
               </Label>
 
-              <Btn type="submit" disabled={isSubmitting} error={errors.wallet || errors.discord}>
+              <Btn type="submit" disabled={isSubmitting}>
                 {status && status.success
                   ? 'Success'
                   : errors.wallet || errors.discord

@@ -20,12 +20,12 @@ export const LogoIconStyled = styled(LogoIcon)`
   width: 48px;
   height: 32px;
 
-  fill: ${p => (p.isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
+  fill: ${p => (p.$isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
 
   transition: all ${p => p.theme.transition.hover};
 
   &:hover {
-    fill: ${p => (p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
@@ -41,7 +41,7 @@ export const DiscordIconStyled = styled(DiscordIcon)`
   width: 16px;
   height: 16px;
 
-  fill: ${p => (p.isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
+  fill: ${p => (p.$isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
 
   transition: all ${p => p.theme.transition.hover};
 
@@ -58,7 +58,7 @@ export const ShipIconStyled = styled(ShipIcon)`
   width: 16px;
   height: 16px;
 
-  fill: ${p => (p.isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
+  fill: ${p => (p.$isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
 
   transition: all ${p => p.theme.transition.hover};
 
@@ -75,7 +75,7 @@ export const TwitterIconStyled = styled(TwitterIcon)`
   width: 16px;
   height: 16px;
 
-  fill: ${p => (p.isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
+  fill: ${p => (p.$isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
 
   transition: all ${p => p.theme.transition.hover};
 
@@ -117,40 +117,40 @@ export const Btn = styled.button`
   line-height: 117%;
   text-transform: uppercase;
 
-  color: ${p => (p.isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
+  color: ${p => (p.$isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
   border-radius: ${p => p.theme.radius.xs};
 
   backdrop-filter: blur(12px);
   background-color: ${p =>
-    p.isOpen ? p.theme.colors.bg.semiTrLight : p.theme.colors.bg.semiTrDark};
+    p.$isOpen ? p.theme.colors.bg.semiTrLight : p.theme.colors.bg.semiTrDark};
 
   transition: all ${p => p.theme.transition.hover};
 
   &:hover {
-    color: ${p => (p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    color: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
 
     ${Span}::after {
       background-color: ${p =>
-        p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white};
+        p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white};
     }
 
     ${DiscordIconStyled} {
-      fill: ${p => (p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
     }
 
     ${ShipIconStyled} {
-      fill: ${p => (p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
     }
 
     ${TwitterIconStyled} {
-      fill: ${p => (p.isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
     }
   }
 
   @media (min-width: ${p => p.theme.screens.mobMax}) {
     border-top-left-radius: ${p => (p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs)};
     border-bottom-left-radius: ${p =>
-      p.isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs};
+      p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs};
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
@@ -160,9 +160,9 @@ export const Btn = styled.button`
     font-size: 16px;
 
     border-radius: ${p => p.theme.radius.sm};
-    border-top-left-radius: ${p => (p.isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.sm)};
+    border-top-left-radius: ${p => (p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.sm)};
     border-bottom-left-radius: ${p =>
-      p.isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.sm};
+      p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.sm};
   }
 `;
 
