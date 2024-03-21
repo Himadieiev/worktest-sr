@@ -35,7 +35,7 @@ export const App = () => {
             />
             <BurgerMenu isOpen={isBurgerMenuOpen} toggle={toggleBurgerMenu} />
           </HeaderHeroWrapper>
-          <Container>
+          <Container style={{ visibility: 'hidden' }}>
             <About />
             <MindMap />
             <FAQ />
@@ -47,7 +47,11 @@ export const App = () => {
       ) : (
         <>
           <HeaderHeroWrapper>
-            <Header isBurgerMenuOpen={isBurgerMenuOpen} toggleBurgerMenu={toggleBurgerMenu} />
+            <Header
+              isBurgerMenuOpen={isBurgerMenuOpen}
+              toggleBurgerMenu={toggleBurgerMenu}
+              setIsBurgerMenuOpen={setIsBurgerMenuOpen}
+            />
             <Hero />
             {isBurgerMenuOpen && <BurgerMenu toggle={toggleBurgerMenu} />}
           </HeaderHeroWrapper>

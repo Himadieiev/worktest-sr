@@ -45,7 +45,7 @@ const Hero = () => {
         <span>APES</span>
       </MainTitle>
       <TextTwo>Apes aRe eveRywhere</TextTwo>
-      <ImageStyled src={imgSrc} alt="monkey" />
+      <ImageStyled src={imgSrc} alt="nft-monkey" />
       <Wrapper>
         <Button type="button" onClick={() => scrollToSection('mint')}>
           Meet Apes

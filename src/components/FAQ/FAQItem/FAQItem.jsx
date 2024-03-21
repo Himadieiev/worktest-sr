@@ -10,7 +10,7 @@ const FAQItem = ({ item, isActive, onItemClick, index }) => {
   return (
     <FAQItemWrapper onClick={handleClick} $isActive={isActive}>
       <ImageWrapper $isActive={isActive}>
-        <img src={imgSrc} alt="monkey" />
+        <img src={imgSrc} alt="nft-monkey" />
       </ImageWrapper>
       <Number className="number" $isActive={isActive}>
         {number}

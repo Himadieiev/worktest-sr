@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { animated } from '@react-spring/web';
 
-export const BurgerMenuWrapper = styled.nav`
+export const BurgerMenuWrapper = styled(animated.nav)`
   position: absolute;
   top: 0;
   left: 0;
