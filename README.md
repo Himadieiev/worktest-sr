@@ -11,10 +11,20 @@ technical specifications.
 
 To run this project locally, follow these steps:
 
-1. Clone the repository to your local machine using: git clone <repository-url>
-2. Navigate to the project directory: cd <project-folder>
-3. Install the dependencies: npm install
+1. Clone the repository to your local machine using:
+
+`git clone your_repository_url`
+
+1. Navigate to the project directory:
+
+`cd project_folder`
+
+3. Install the dependencies:
+
+`npm install`
 
 ## Usage
 
-To start the development server, use: npm start
+To start the development server, use:
+
+`npm start`
