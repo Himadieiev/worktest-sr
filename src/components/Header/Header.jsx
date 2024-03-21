@@ -19,7 +19,7 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen, setIsBurgerMenuOpe
 
   return (
     <HeaderStyled>
-      <a href="/">
+      <a href="https://himadieiev.github.io/worktest-sr/">
         <LogoIconStyled $isOpen={isOpen} />
       </a>
       <Btn
