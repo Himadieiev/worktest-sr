@@ -5,14 +5,13 @@ import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import About from '../About/About';
-import MovingBanner from '../About/MovingBanner/MovingBanner';
 import MindMap from '../MindMap/MindMap';
 import FAQ from '../FAQ/FAQ';
 import Arts from '../Arts/Arts';
 import ContactUs from '../ContactUs/ContactUs';
 import Footer from '../Footer/Footer';
 
-import { AppStyled, Container, HeaderHeroWrapper } from './App.styled';
+import { AppStyled, HeaderHeroWrapper } from './App.styled';
 
 export const App = () => {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -28,47 +27,31 @@ export const App = () => {
       {isSmallScreen && isBurgerMenuOpen ? (
         <>
           <HeaderHeroWrapper>
-            <Header
-              toggleBurgerMenu={toggleBurgerMenu}
-              isOpen={isBurgerMenuOpen}
-              setIsBurgerMenuOpen={setIsBurgerMenuOpen}
-            />
+            <Header toggleBurgerMenu={toggleBurgerMenu} isOpen={isBurgerMenuOpen} />
             <BurgerMenu isOpen={isBurgerMenuOpen} toggle={toggleBurgerMenu} />
           </HeaderHeroWrapper>
-          <Container style={{ visibility: 'hidden' }}>
+          <div style={{ visibility: 'hidden' }}>
             <About />
             <MindMap />
             <FAQ />
             <Arts />
             <ContactUs />
             <Footer />
-          </Container>
+          </div>
         </>
       ) : (
         <>
           <HeaderHeroWrapper>
-            <Header
-              isBurgerMenuOpen={isBurgerMenuOpen}
-              toggleBurgerMenu={toggleBurgerMenu}
-              setIsBurgerMenuOpen={setIsBurgerMenuOpen}
-            />
+            <Header isBurgerMenuOpen={isBurgerMenuOpen} toggleBurgerMenu={toggleBurgerMenu} />
             <Hero />
             {isBurgerMenuOpen && <BurgerMenu toggle={toggleBurgerMenu} />}
           </HeaderHeroWrapper>
-
-          <Container>
-            <About />
-          </Container>
-
-          <MovingBanner />
-
-          <Container>
-            <MindMap />
-            <FAQ />
-            <Arts />
-            <ContactUs />
-            <Footer />
-          </Container>
+          <About />
+          <MindMap />
+          <FAQ />
+          <Arts />
+          <ContactUs />
+          <Footer />
         </>
       )}
     </AppStyled>

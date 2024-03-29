@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Title from '../Common/Title/Title';
+import Container from '../Common/Container/Container';
 import FAQItem from './FAQItem/FAQItem';
 import { FAQ_DATA } from './../../constants/faqData';
 
@@ -15,19 +16,21 @@ const FAQ = () => {
 
   return (
     <FAQWrapper id="faq">
-      <Title>FAQ</Title>
+      <Container>
+        <Title>FAQ</Title>
 
-      <FAQList>
-        {FAQ_DATA.map((item, index) => (
-          <FAQItem
-            key={index}
-            item={item}
-            isActive={index === activeIndex}
-            onItemClick={handleItemClick}
-            index={index}
-          />
-        ))}
-      </FAQList>
+        <FAQList>
+          {FAQ_DATA.map((item, index) => (
+            <FAQItem
+              key={index}
+              item={item}
+              isActive={index === activeIndex}
+              onItemClick={handleItemClick}
+              index={index}
+            />
+          ))}
+        </FAQList>
+      </Container>
     </FAQWrapper>
   );
 };

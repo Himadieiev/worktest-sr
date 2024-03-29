@@ -2,25 +2,31 @@ import styled from 'styled-components';
 
 import { ReactComponent as CrossIcon } from '../../assets/svg/cross.svg';
 
-export const AboutWrapper = styled.section`
+export const AboutSectionWrapper = styled.section`
   position: relative;
 
   padding-top: 63px;
+
+  @media (min-width: ${p => p.theme.screens.tab}) {
+    padding-top: 80px;
+    padding-bottom: 88px;
+  }
+
+  @media (min-width: ${p => p.theme.screens.desk}) {
+    padding-top: 120px;
+    padding-bottom: 126px;
+  }
+`;
+
+export const ContentWrapper = styled.div`
+  position: relative;
 
   display: flex;
   flex-direction: column;
 
   @media (min-width: ${p => p.theme.screens.tab}) {
-    padding-top: 80px;
-    padding-bottom: 36px;
-
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: ${p => p.theme.screens.desk}) {
-    padding-top: 120px;
-    padding-bottom: 40px;
   }
 `;
 
@@ -68,6 +74,7 @@ export const TextOne = styled.p`
   @media (min-width: ${p => p.theme.screens.tab}) {
     width: 275px;
     margin-bottom: 0;
+    margin-left: auto;
     margin-top: 11px;
   }
 
@@ -137,13 +144,13 @@ export const ImageStyled = styled.img`
   @media (min-width: ${p => p.theme.screens.tab}) {
     position: absolute;
     right: 0;
-    top: 205px;
+    top: 125px;
 
     width: 313px;
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
-    top: 342px;
+    top: 222px;
 
     width: 492px;
   }

@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const MindMapWrapper = styled.section`
-  padding-top: 112px;
+  padding-top: 60px;
 
   @media (min-width: ${p => p.theme.screens.tab}) {
-    padding-top: 132px;
+    padding-top: 80px;
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
-    padding-top: 206px;
+    padding-top: 120px;
   }
 `;
 

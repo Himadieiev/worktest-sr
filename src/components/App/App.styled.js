@@ -36,7 +36,7 @@ export const HeaderHeroWrapper = styled.div`
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
-    max-width: 1408px;
+    max-width: 1240px;
     height: 677px;
     padding: 24px 12px 0 12px;
 
@@ -44,23 +44,7 @@ export const HeaderHeroWrapper = styled.div`
   }
 
   @media (min-width: ${p => p.theme.screens.deskMax}) {
+    max-width: 1408px;
     padding: 24px 96px 0 96px;
-  }
-`;
-
-export const Container = styled.div`
-  width: 344px;
-  padding: 0 64px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: ${p => p.theme.screens.tab}) {
-    width: 736px;
-    padding: 0 72px;
-  }
-
-  @media (min-width: ${p => p.theme.screens.desk}) {
-    width: 1408px;
-    padding: 0 188px;
   }
 `;

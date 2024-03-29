@@ -9,14 +9,7 @@ import {
   TwitterIconStyled,
 } from './Header.styled';
 
-const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen, setIsBurgerMenuOpen }) => {
-  const handleClick = () => {
-    if (isOpen) setIsBurgerMenuOpen(false);
-    if (isBurgerMenuOpen) setIsBurgerMenuOpen(false);
-
-    return;
-  };
-
+const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
   return (
     <HeaderStyled>
       <a href="https://himadieiev.github.io/worktest-sr/">
@@ -32,36 +25,21 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen, setIsBurgerMenuOpe
       </Btn>
       <SocialLinks>
         <li>
-          <a
-            href="https://discord.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleClick}
-          >
+          <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
             <Btn $isOpen={isOpen}>
               <DiscordIconStyled $isOpen={isOpen} />
             </Btn>
           </a>
         </li>
         <li>
-          <a
-            href="https://instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleClick}
-          >
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
             <Btn $isOpen={isOpen}>
               <ShipIconStyled $isOpen={isOpen} />
             </Btn>
           </a>
         </li>
         <li>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleClick}
-          >
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
             <Btn $isOpen={isOpen}>
               <TwitterIconStyled $isOpen={isOpen} />
             </Btn>

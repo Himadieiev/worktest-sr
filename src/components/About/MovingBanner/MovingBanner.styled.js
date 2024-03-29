@@ -4,8 +4,9 @@ import { ReactComponent as CrossIcon } from '../../../assets/svg/cross.svg';
 
 export const MovingBannerWrapper = styled.div`
   position: absolute;
-  left: 0;
-  right: 0;
+  left: -8px;
+  right: -8px;
+  bottom: 0;
 
   height: 52px;
 
@@ -13,6 +14,11 @@ export const MovingBannerWrapper = styled.div`
 
   background-color: ${p => p.theme.colors.general.red};
   cursor: pointer;
+
+  @media (min-width: ${p => p.theme.screens.tab}) {
+    left: -16px;
+    right: -16px;
+  }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
     height: 86px;
