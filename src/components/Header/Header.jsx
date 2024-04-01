@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   Btn,
   DiscordIconStyled,
@@ -51,3 +53,9 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
 };
 
 export default Header;
+
+Header.propTypes = {
+  isBurgerMenuOpen: PropTypes.bool,
+  isOpen: PropTypes.bool,
+  toggleBurgerMenu: PropTypes.func.isRequired,
+};

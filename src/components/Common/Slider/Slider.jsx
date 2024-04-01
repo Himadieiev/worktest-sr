@@ -4,8 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import PropTypes from 'prop-types';
 
-import { SliderBtns } from '../SliderBtns/SliderBtns';
+import SliderBtns from '../SliderBtns/SliderBtns';
 
 const Slider = ({
   sliderNumber,
@@ -111,3 +112,15 @@ const Slider = ({
 };
 
 export default Slider;
+
+Slider.propTypes = {
+  sliderNumber: PropTypes.number.isRequired,
+  slides: PropTypes.arrayOf(PropTypes.object).isRequired,
+  spaceBetweenMob: PropTypes.number.isRequired,
+  spaceBetweenTab: PropTypes.number.isRequired,
+  spaceBetweenDesk: PropTypes.number.isRequired,
+  slidesPerViewMob: PropTypes.number.isRequired,
+  slidesPerViewTab: PropTypes.number.isRequired,
+  slidesPerViewDesk: PropTypes.number.isRequired,
+  children: PropTypes.node,
+};

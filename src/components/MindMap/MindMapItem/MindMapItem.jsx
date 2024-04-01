@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { scrollToSection } from '../../../utils/scrollToSection';
 
 import { ArrowIconStyled, LinkItem, MindMapItemWrapper, Text, Title } from './MindMapItem.styled';
@@ -29,3 +31,12 @@ const MindMapItem = ({ item }) => {
 };
 
 export default MindMapItem;
+
+MindMapItem.propTypes = {
+  item: PropTypes.shape({
+    bgColor: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    icon: PropTypes.bool,
+    title: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};

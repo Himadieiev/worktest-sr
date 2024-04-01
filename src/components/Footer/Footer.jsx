@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { FooterText, FooterWrapper } from './Footer.styled';
 
 const Footer = ({ isOpen }) => {
@@ -9,3 +11,7 @@ const Footer = ({ isOpen }) => {
 };
 
 export default Footer;
+
+Footer.propTypes = {
+  isOpen: PropTypes.bool,
+};

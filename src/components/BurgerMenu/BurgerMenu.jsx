@@ -1,5 +1,6 @@
 import { useSpring } from '@react-spring/web';
 import { useMediaQuery } from '@uidotdev/usehooks';
+import PropTypes from 'prop-types';
 
 import Footer from '../Footer/Footer';
 import { scrollToSection } from '../../utils/scrollToSection';
@@ -53,3 +54,8 @@ const BurgerMenu = ({ isOpen, toggle }) => {
 };
 
 export default BurgerMenu;
+
+BurgerMenu.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  toggle: PropTypes.func.isRequired,
+};

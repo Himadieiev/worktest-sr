@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { ArtItemWrapper, ImageStyled } from './ArtItem.styled';
 
 const ArtItem = ({ item }) => {
@@ -9,3 +11,9 @@ const ArtItem = ({ item }) => {
 };
 
 export default ArtItem;
+
+ArtItem.propTypes = {
+  item: PropTypes.shape({
+    imgSrc: PropTypes.string.isRequired,
+  }).isRequired,
+};

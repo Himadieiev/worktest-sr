@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Answer, FAQItemWrapper, ImageWrapper, Number, Question, Wrapper } from './FAQItem.styled';
 
 const FAQItem = ({ item, isActive, onItemClick, index }) => {
@@ -26,3 +28,15 @@ const FAQItem = ({ item, isActive, onItemClick, index }) => {
 };
 
 export default FAQItem;
+
+FAQItem.propTypes = {
+  item: PropTypes.shape({
+    number: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
+  }).isRequired,
+  isActive: PropTypes.bool.isRequired,
+  onItemClick: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
+};

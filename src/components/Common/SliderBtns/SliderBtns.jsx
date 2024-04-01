@@ -1,13 +1,8 @@
+import PropTypes from 'prop-types';
+
 import { Btn, BtnsWrapper } from './SliderBtns.styled';
 
-export const SliderBtns = ({
-  isBeginning,
-  isEnd,
-  sliderNumber,
-  previous,
-  next,
-  isAllSlidesShow,
-}) => {
+const SliderBtns = ({ isBeginning, isEnd, sliderNumber, previous, next, isAllSlidesShow }) => {
   return (
     <>
       {!isAllSlidesShow ? (
@@ -31,4 +26,15 @@ export const SliderBtns = ({
       )}
     </>
   );
+};
+
+export default SliderBtns;
+
+SliderBtns.propTypes = {
+  isBeginning: PropTypes.bool.isRequired,
+  isEnd: PropTypes.bool.isRequired,
+  sliderNumber: PropTypes.number.isRequired,
+  previous: PropTypes.func.isRequired,
+  next: PropTypes.func.isRequired,
+  isAllSlidesShow: PropTypes.bool.isRequired,
 };

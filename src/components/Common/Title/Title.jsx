@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { TitleWrapper } from './Title.styled';
 
 const Title = ({ children }) => {
@@ -5,3 +7,7 @@ const Title = ({ children }) => {
 };
 
 export default Title;
+
+Title.propTypes = {
+  children: PropTypes.node,
+};
