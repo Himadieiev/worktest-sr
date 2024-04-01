@@ -196,7 +196,8 @@ export const Button = styled.button`
   background-color: ${p => p.theme.colors.bg.semiTrDark};
   transition: all ${p => p.theme.transition.hover};
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${p => p.theme.colors.general.white};
   }
 

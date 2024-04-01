@@ -209,7 +209,8 @@ export const Btn = styled.button`
   background-color: ${p => p.theme.colors.bg.red};
   transition: all ${p => p.theme.transition.hover};
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${p => p.theme.colors.general.dark};
   }
 

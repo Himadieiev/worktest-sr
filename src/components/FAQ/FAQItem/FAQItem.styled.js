@@ -19,7 +19,8 @@ export const FAQItemWrapper = styled.div`
   border-radius: ${p => p.theme.radius.sm};
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .number {
       color: ${p => p.theme.colors.general.white};
     }

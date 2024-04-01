@@ -35,7 +35,8 @@ export const MindMapItemWrapper = styled.div`
   background-color: ${p => p.$bgColor};
   border-radius: ${p => p.theme.radius.sm};
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${ArrowIconStyled} {
       transform: translate(6px, -6px);
     }
@@ -49,7 +50,8 @@ export const MindMapItemWrapper = styled.div`
 
     border-radius: ${p => p.theme.radius.md};
 
-    &:hover {
+    &:hover,
+    &:focus {
       ${ArrowIconStyled} {
         transform: translate(12px, -12px);
       }

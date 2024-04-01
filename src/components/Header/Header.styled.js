@@ -24,7 +24,8 @@ export const LogoIconStyled = styled(LogoIcon)`
 
   transition: all ${p => p.theme.transition.hover};
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
   }
 
@@ -126,7 +127,8 @@ export const Btn = styled.button`
 
   transition: all ${p => p.theme.transition.hover};
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
 
     ${Span}::after {

@@ -113,7 +113,8 @@ export const NavItem = styled.li`
 
   transition: all ${p => p.theme.transition.hover};
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
 
     ${Span}::after {
