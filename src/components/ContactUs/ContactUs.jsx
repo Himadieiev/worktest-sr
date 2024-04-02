@@ -1,5 +1,6 @@
 import { Formik } from 'formik';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 import Title from '../Common/Title/Title';
 import { validateSchema } from '../../utils/validateSchema';
@@ -38,6 +39,7 @@ const ContactUs = () => {
           validationSchema={validateSchema}
           onSubmit={async (values, { setSubmitting, setStatus, resetForm }) => {
             try {
+              toast.success('Success! Your data has been sent.');
               console.log(values);
               setStatus({ success: true });
               setButtonText('Success');

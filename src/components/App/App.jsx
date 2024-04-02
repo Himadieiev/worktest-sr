@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useMediaQuery } from '@uidotdev/usehooks';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
@@ -54,6 +56,13 @@ export const App = () => {
           <Footer />
         </>
       )}
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        theme="colored"
+        pauseOnHover
+        draggable
+      />
     </AppStyled>
   );
 };
