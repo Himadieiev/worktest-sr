@@ -4,7 +4,9 @@ import {
   Btn,
   DiscordIconStyled,
   HeaderStyled,
+  LinkStyled,
   LogoIconStyled,
+  LogoLinkStyled,
   ShipIconStyled,
   SocialLinks,
   Span,
@@ -14,9 +16,9 @@ import {
 const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
   return (
     <HeaderStyled>
-      <a href="https://himadieiev.github.io/worktest-sr/">
+      <LogoLinkStyled href="https://himadieiev.github.io/worktest-sr/">
         <LogoIconStyled $isOpen={isOpen} />
-      </a>
+      </LogoLinkStyled>
       <Btn
         type="button"
         onClick={toggleBurgerMenu}
@@ -27,25 +29,34 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
       </Btn>
       <SocialLinks>
         <li>
-          <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
-            <Btn $isOpen={isOpen}>
-              <DiscordIconStyled $isOpen={isOpen} />
-            </Btn>
-          </a>
+          <LinkStyled
+            href="https://discord.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            $isOpen={isOpen}
+          >
+            <DiscordIconStyled $isOpen={isOpen} />
+          </LinkStyled>
         </li>
         <li>
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
-            <Btn $isOpen={isOpen}>
-              <ShipIconStyled $isOpen={isOpen} />
-            </Btn>
-          </a>
+          <LinkStyled
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            $isOpen={isOpen}
+          >
+            <ShipIconStyled $isOpen={isOpen} />
+          </LinkStyled>
         </li>
         <li>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-            <Btn $isOpen={isOpen}>
-              <TwitterIconStyled $isOpen={isOpen} />
-            </Btn>
-          </a>
+          <LinkStyled
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            $isOpen={isOpen}
+          >
+            <TwitterIconStyled $isOpen={isOpen} />
+          </LinkStyled>
         </li>
       </SocialLinks>
     </HeaderStyled>

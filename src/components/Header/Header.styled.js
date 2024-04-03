@@ -24,14 +24,20 @@ export const LogoIconStyled = styled(LogoIcon)`
 
   transition: all ${p => p.theme.transition.hover};
 
-  &:hover,
-  &:focus {
-    fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
-  }
-
   @media (min-width: ${p => p.theme.screens.desk}) {
     width: 72px;
     height: 50px;
+  }
+`;
+
+export const LogoLinkStyled = styled.a`
+  &:hover,
+  &:focus {
+    ${LogoIconStyled} {
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    }
+
+    fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
   }
 `;
 
@@ -102,6 +108,73 @@ export const Span = styled.span`
 `;
 
 export const Btn = styled.button`
+  position: relative;
+  z-index: 30;
+
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: ${p => p.theme.fonts.fourth};
+  font-size: 12px;
+  line-height: 117%;
+  text-transform: uppercase;
+
+  color: ${p => (p.$isOpen ? p.theme.colors.general.white : p.theme.colors.general.dark)};
+  border-radius: ${p => p.theme.radius.xs};
+
+  backdrop-filter: blur(12px);
+  background-color: ${p =>
+    p.$isOpen ? p.theme.colors.bg.semiTrLight : p.theme.colors.bg.semiTrDark};
+
+  transition: all ${p => p.theme.transition.hover};
+
+  &:hover,
+  &:focus {
+    color: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+
+    ${Span}::after {
+      background-color: ${p =>
+        p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white};
+    }
+
+    ${DiscordIconStyled} {
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    }
+
+    ${ShipIconStyled} {
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    }
+
+    ${TwitterIconStyled} {
+      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
+    }
+  }
+
+  @media (min-width: ${p => p.theme.screens.mobMax}) {
+    border-top-left-radius: ${p => (p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs)};
+    border-bottom-left-radius: ${p =>
+      p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.xs};
+  }
+
+  @media (min-width: ${p => p.theme.screens.desk}) {
+    width: 80px;
+    height: 80px;
+
+    font-size: 16px;
+
+    border-radius: ${p => p.theme.radius.sm};
+    border-top-left-radius: ${p => (p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.sm)};
+    border-bottom-left-radius: ${p =>
+      p.$isBurgerMenuOpen ? p.theme.radius.none : p.theme.radius.sm};
+  }
+`;
+
+export const LinkStyled = styled.a`
   position: relative;
   z-index: 30;
 

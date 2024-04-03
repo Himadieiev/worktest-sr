@@ -29,4 +29,8 @@ body {
 a{
   color: inherit
 }
+
+input:focus, a:focus, button:focus{
+  outline: 1px solid #fff;
+}
 `;
