@@ -94,7 +94,7 @@ export const Span = styled.span`
   }
 `;
 
-export const NavItem = styled.li`
+export const NavItemLink = styled.a`
   position: relative;
 
   height: 40px;

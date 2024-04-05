@@ -10,7 +10,17 @@ const FAQItem = ({ item, isActive, onItemClick, index }) => {
   };
 
   return (
-    <FAQItemWrapper onClick={handleClick} $isActive={isActive}>
+    <FAQItemWrapper
+      onKeyDown={e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onItemClick(index);
+        }
+      }}
+      onClick={handleClick}
+      $isActive={isActive}
+      tabIndex="0"
+    >
       <ImageWrapper $isActive={isActive}>
         <img src={imgSrc} alt="nft-monkey" loading="lazy" />
       </ImageWrapper>

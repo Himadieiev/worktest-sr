@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { scrollToSection } from '../../../utils/scrollToSection';
 
-import { ArrowIconStyled, LinkItem, MindMapItemWrapper, Text, Title } from './MindMapItem.styled';
+import { ArrowIconStyled, MindMapItemWrapper, Text, Title } from './MindMapItem.styled';
 
 const MindMapItem = ({ item }) => {
   const { bgColor, text, icon, title } = item;
@@ -10,16 +10,25 @@ const MindMapItem = ({ item }) => {
   return (
     <>
       {icon ? (
-        <LinkItem onClick={() => scrollToSection('start')}>
-          <MindMapItemWrapper $bgColor={bgColor}>
-            <ArrowIconStyled />
-            <div>
-              {title.map((titleItem, index) => (
-                <Title key={index}>{titleItem}</Title>
-              ))}
-            </div>
-          </MindMapItemWrapper>
-        </LinkItem>
+        <MindMapItemWrapper
+          $bgColor={bgColor}
+          role="button"
+          tabIndex="0"
+          onClick={() => scrollToSection('start')}
+          onKeyDown={e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              scrollToSection('start');
+            }
+          }}
+        >
+          <ArrowIconStyled />
+          <div>
+            {title.map((titleItem, index) => (
+              <Title key={index}>{titleItem}</Title>
+            ))}
+          </div>
+        </MindMapItemWrapper>
       ) : (
         <MindMapItemWrapper $bgColor={bgColor}>
           <Text>{text}</Text>

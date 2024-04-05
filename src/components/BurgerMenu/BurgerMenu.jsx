@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Footer from '../Footer/Footer';
 import { scrollToSection } from '../../utils/scrollToSection';
 
-import { BurgerMenuWrapper, NavItem, NavList, Span } from './BurgerMenu.styled';
+import { BurgerMenuWrapper, NavItemLink, NavList, Span } from './BurgerMenu.styled';
 
 const BurgerMenu = ({ isOpen, toggle }) => {
   const isSmallScreen = useMediaQuery('(max-width: 479px)');
@@ -32,21 +32,86 @@ const BurgerMenu = ({ isOpen, toggle }) => {
   return (
     <BurgerMenuWrapper style={burgerMenuAnimation}>
       <NavList>
-        <NavItem $isOpen={isOpen} onClick={() => handleClick('about')}>
-          <Span>ABOUT</Span>
-        </NavItem>
-        <NavItem $isOpen={isOpen} onClick={() => handleClick('m-map')}>
-          <Span>M-MAP</Span>
-        </NavItem>
-        <NavItem $isOpen={isOpen} onClick={() => handleClick('faq')}>
-          <Span>FAQ</Span>
-        </NavItem>
-        <NavItem $isOpen={isOpen} onClick={() => handleClick('arts')}>
-          <Span>ARTS</Span>
-        </NavItem>
-        <NavItem $isOpen={isOpen} onClick={() => handleClick('mint')}>
-          <Span>MINT</Span>
-        </NavItem>
+        <li>
+          <NavItemLink
+            role="button"
+            tabIndex="0"
+            $isOpen={isOpen}
+            onClick={() => handleClick('about')}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleClick('about');
+              }
+            }}
+          >
+            <Span>ABOUT</Span>
+          </NavItemLink>
+        </li>
+        <li>
+          <NavItemLink
+            role="button"
+            tabIndex="0"
+            $isOpen={isOpen}
+            onClick={() => handleClick('m-map')}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleClick('m-map');
+              }
+            }}
+          >
+            <Span>M-MAP</Span>
+          </NavItemLink>
+        </li>
+        <li>
+          <NavItemLink
+            role="button"
+            tabIndex="0"
+            $isOpen={isOpen}
+            onClick={() => handleClick('faq')}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleClick('faq');
+              }
+            }}
+          >
+            <Span>FAQ</Span>
+          </NavItemLink>
+        </li>
+        <li>
+          <NavItemLink
+            role="button"
+            tabIndex="0"
+            $isOpen={isOpen}
+            onClick={() => handleClick('arts')}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleClick('arts');
+              }
+            }}
+          >
+            <Span>ARTS</Span>
+          </NavItemLink>
+        </li>
+        <li>
+          <NavItemLink
+            role="button"
+            tabIndex="0"
+            $isOpen={isOpen}
+            onClick={() => handleClick('mint')}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleClick('mint');
+              }
+            }}
+          >
+            <Span>MINT</Span>
+          </NavItemLink>
+        </li>
       </NavList>
       {isOpen && <Footer isOpen={isOpen} />}
     </BurgerMenuWrapper>

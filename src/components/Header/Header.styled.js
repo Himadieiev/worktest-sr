@@ -31,13 +31,19 @@ export const LogoIconStyled = styled(LogoIcon)`
 `;
 
 export const LogoLinkStyled = styled.a`
+  position: relative;
+  z-index: 30;
+
+  width: 48px;
+  height: 32px;
+
+  transition: all ${p => p.theme.transition.hover};
+
   &:hover,
   &:focus {
     ${LogoIconStyled} {
       fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
     }
-
-    fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
   }
 `;
 
@@ -141,18 +147,6 @@ export const Btn = styled.button`
       background-color: ${p =>
         p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white};
     }
-
-    ${DiscordIconStyled} {
-      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
-    }
-
-    ${ShipIconStyled} {
-      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
-    }
-
-    ${TwitterIconStyled} {
-      fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
-    }
   }
 
   @media (min-width: ${p => p.theme.screens.mobMax}) {
@@ -203,11 +197,6 @@ export const LinkStyled = styled.a`
   &:hover,
   &:focus {
     color: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};
-
-    ${Span}::after {
-      background-color: ${p =>
-        p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white};
-    }
 
     ${DiscordIconStyled} {
       fill: ${p => (p.$isOpen ? p.theme.colors.general.red : p.theme.colors.general.white)};

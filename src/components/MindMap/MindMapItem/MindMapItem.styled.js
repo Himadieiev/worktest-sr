@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 import { ReactComponent as ArrowIcon } from '../../../assets/svg/arrow.svg';
 
-export const LinkItem = styled.div`
-  cursor: pointer;
-`;
-
 export const ArrowIconStyled = styled(ArrowIcon)`
   width: 24px;
   height: 24px;
@@ -22,7 +18,7 @@ export const ArrowIconStyled = styled(ArrowIcon)`
   }
 `;
 
-export const MindMapItemWrapper = styled.div`
+export const MindMapItemWrapper = styled.a`
   width: 216px;
   height: 242px;
   padding: 24px 12px;

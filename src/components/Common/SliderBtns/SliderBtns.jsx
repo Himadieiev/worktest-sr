@@ -11,17 +11,27 @@ const SliderBtns = ({ isBeginning, isEnd, sliderNumber, previous, next, isAllSli
             className={`button prevBtn${sliderNumber}`}
             onClick={previous}
             disabled={isBeginning}
+            type="button"
           >
             Prev
           </Btn>
-          <Btn className={`button nextBtn${sliderNumber}`} onClick={next} disabled={isEnd}>
+          <Btn
+            className={`button nextBtn${sliderNumber}`}
+            onClick={next}
+            disabled={isEnd}
+            type="button"
+          >
             Next
           </Btn>
         </BtnsWrapper>
       ) : (
         <BtnsWrapper>
-          <Btn disabled>Prev</Btn>
-          <Btn disabled>Next</Btn>
+          <Btn type="button" disabled>
+            Prev
+          </Btn>
+          <Btn type="button" disabled>
+            Next
+          </Btn>
         </BtnsWrapper>
       )}
     </>

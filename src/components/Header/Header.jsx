@@ -16,7 +16,7 @@ import {
 const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
   return (
     <HeaderStyled>
-      <LogoLinkStyled href="https://himadieiev.github.io/worktest-sr/">
+      <LogoLinkStyled $isOpen={isOpen} href="https://himadieiev.github.io/worktest-sr/">
         <LogoIconStyled $isOpen={isOpen} />
       </LogoLinkStyled>
       <Btn
