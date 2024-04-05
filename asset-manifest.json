@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/worktest-sr/static/css/main.e241db04.css",
-    "main.js": "/worktest-sr/static/js/main.69471c9b.js",
+    "main.css": "/worktest-sr/static/css/main.c6b791d5.css",
+    "main.js": "/worktest-sr/static/js/main.6cf2304a.js",
     "static/media/BiroScriptUSPlus-Bold.ttf": "/worktest-sr/static/media/BiroScriptUSPlus-Bold.c25a918a0bfeeaf1fb9f.ttf",
     "static/media/BiroScriptPlus-Bold.ttf": "/worktest-sr/static/media/BiroScriptPlus-Bold.d59732f3d22e3d024577.ttf",
     "static/media/about-desk.png": "/worktest-sr/static/media/about-desk.a64acf974a210ea01b12.png",
@@ -41,11 +41,11 @@
     "static/media/twitter.svg": "/worktest-sr/static/media/twitter.1f905bee151cf2ca6536139280f77ab9.svg",
     "static/media/cross.svg": "/worktest-sr/static/media/cross.a91edd94aee68e9b6e40e1a80cc844ed.svg",
     "static/media/arrow.svg": "/worktest-sr/static/media/arrow.df622a0e63256d9af3ff81dae6e922cd.svg",
-    "main.e241db04.css.map": "/worktest-sr/static/css/main.e241db04.css.map",
-    "main.69471c9b.js.map": "/worktest-sr/static/js/main.69471c9b.js.map"
+    "main.c6b791d5.css.map": "/worktest-sr/static/css/main.c6b791d5.css.map",
+    "main.6cf2304a.js.map": "/worktest-sr/static/js/main.6cf2304a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e241db04.css",
-    "static/js/main.69471c9b.js"
+    "static/css/main.c6b791d5.css",
+    "static/js/main.6cf2304a.js"
   ]
 }
