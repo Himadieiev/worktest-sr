@@ -16,8 +16,12 @@ import {
 const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
   return (
     <HeaderStyled>
-      <LogoLinkStyled $isOpen={isOpen} href="https://himadieiev.github.io/worktest-sr/">
-        <LogoIconStyled $isOpen={isOpen} />
+      <LogoLinkStyled
+        $isOpen={isOpen}
+        href="https://himadieiev.github.io/worktest-sr/"
+        aria-label="Main Page Link"
+      >
+        <LogoIconStyled $isOpen={isOpen} aria-label="Logo Icon" />
       </LogoLinkStyled>
       <Btn
         type="button"
@@ -34,8 +38,9 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
             target="_blank"
             rel="noopener noreferrer"
             $isOpen={isOpen}
+            aria-label="Discord Link"
           >
-            <DiscordIconStyled $isOpen={isOpen} />
+            <DiscordIconStyled $isOpen={isOpen} aria-label="Discord Icon" />
           </LinkStyled>
         </li>
         <li>
@@ -44,8 +49,9 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
             target="_blank"
             rel="noopener noreferrer"
             $isOpen={isOpen}
+            aria-label="Instagram Link"
           >
-            <ShipIconStyled $isOpen={isOpen} />
+            <ShipIconStyled $isOpen={isOpen} aria-label="Ship Icon" />
           </LinkStyled>
         </li>
         <li>
@@ -54,8 +60,9 @@ const Header = ({ toggleBurgerMenu, isOpen, isBurgerMenuOpen }) => {
             target="_blank"
             rel="noopener noreferrer"
             $isOpen={isOpen}
+            aria-label="Twitter Link"
           >
-            <TwitterIconStyled $isOpen={isOpen} />
+            <TwitterIconStyled $isOpen={isOpen} aria-label="Twitter Icon" />
           </LinkStyled>
         </li>
       </SocialLinks>

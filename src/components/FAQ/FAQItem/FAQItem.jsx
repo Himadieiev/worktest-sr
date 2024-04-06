@@ -22,7 +22,7 @@ const FAQItem = ({ item, isActive, onItemClick, index }) => {
       tabIndex="0"
     >
       <ImageWrapper $isActive={isActive}>
-        <img src={imgSrc} alt="nft-monkey" loading="lazy" />
+        <img src={imgSrc} alt="NFT Monkey" loading="lazy" />
       </ImageWrapper>
       <Number className="number" $isActive={isActive}>
         {number}

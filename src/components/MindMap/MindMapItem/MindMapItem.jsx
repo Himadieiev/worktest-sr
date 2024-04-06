@@ -21,8 +21,9 @@ const MindMapItem = ({ item }) => {
               scrollToSection('start');
             }
           }}
+          aria-label="Mage Page Link"
         >
-          <ArrowIconStyled />
+          <ArrowIconStyled aria-label="Arrow Icon" />
           <div>
             {title.map((titleItem, index) => (
               <Title key={index}>{titleItem}</Title>

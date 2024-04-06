@@ -29,7 +29,7 @@ const ContactUs = () => {
       <ContentWrapper>
         <Title>Are you in?</Title>
         <TextWrapper>
-          <CrossIconStyled />
+          <CrossIconStyled aria-label="Decor Element" />
           <Text>
             Join the YACHT APE community to be one of the first to receive our limited edition NFT
           </Text>
@@ -58,7 +58,7 @@ const ContactUs = () => {
             <FormStyled>
               <Label>
                 <IconWrapper>
-                  <DiscordIconStyled />
+                  <DiscordIconStyled aria-label="Discord Label" />
                 </IconWrapper>
                 <InputStyled
                   type="text"
@@ -71,7 +71,7 @@ const ContactUs = () => {
 
               <Label>
                 <IconWrapper>
-                  <FoxIconStyled />
+                  <FoxIconStyled aria-label="Fox Label" />
                 </IconWrapper>
                 <InputStyled
                   type="text"

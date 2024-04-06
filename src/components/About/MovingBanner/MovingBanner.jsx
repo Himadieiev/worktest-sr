@@ -7,11 +7,11 @@ const MovingBanner = () => {
     <MovingBannerWrapper>
       <Marquee pauseOnHover={true} speed={30} autoFill={true}>
         <Text>Destroy stereotypes</Text>
-        <CrossIconStyled />
+        <CrossIconStyled aria-label="Decor element" />
         <Text>HAVE NO LIMITS</Text>
-        <CrossIconStyled />
+        <CrossIconStyled aria-label="Decor element" />
         <Text>Break rules</Text>
-        <CrossIconStyled />
+        <CrossIconStyled aria-label="Decor element" />
       </Marquee>
     </MovingBannerWrapper>
   );
