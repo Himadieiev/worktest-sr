@@ -18,17 +18,13 @@ export const BurgerMenuWrapper = styled(animated.nav)`
 
   background-color: ${p => p.theme.colors.bg.dark};
 
-  @media (min-width: ${p => p.theme.screens.mobMax}) {
-    height: 56px;
+  @media (min-width: ${p => p.theme.screens.tab}) {
     padding-bottom: 0px;
+    height: 60px;
 
     display: block;
 
     background-color: transparent;
-  }
-
-  @media (min-width: ${p => p.theme.screens.tab}) {
-    height: 60px;
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
@@ -44,10 +40,10 @@ export const NavList = styled.ul`
   flex-direction: column;
   gap: 16px;
 
-  @media (min-width: ${p => p.theme.screens.mobMax}) {
+  @media (min-width: ${p => p.theme.screens.tab}) {
     position: absolute;
-    right: 56px;
-    top: 8px;
+    right: 60px;
+    top: 12px;
 
     width: 240px;
     height: 48px;
@@ -59,11 +55,6 @@ export const NavList = styled.ul`
     border-bottom-left-radius: ${p => p.theme.radius.sm};
     backdrop-filter: blur(12px);
     background-color: ${p => p.theme.colors.bg.semiTrDark};
-  }
-
-  @media (min-width: ${p => p.theme.screens.tab}) {
-    right: 60px;
-    top: 12px;
   }
 
   @media (min-width: ${p => p.theme.screens.desk}) {
@@ -122,7 +113,7 @@ export const NavItemLink = styled.a`
     }
   }
 
-  @media (min-width: ${p => p.theme.screens.mobMax}) {
+  @media (min-width: ${p => p.theme.screens.tab}) {
     width: 48px;
     height: 48px;
 

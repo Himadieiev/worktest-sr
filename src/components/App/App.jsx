@@ -22,11 +22,11 @@ export const App = () => {
     setIsBurgerMenuOpen(!isBurgerMenuOpen);
   };
 
-  const isSmallScreen = useMediaQuery('(max-width: 479px)');
+  const isMediumScreen = useMediaQuery('(max-width: 767px)');
 
   return (
     <AppStyled id="start">
-      {isSmallScreen && isBurgerMenuOpen ? (
+      {isMediumScreen && isBurgerMenuOpen ? (
         <>
           <HeaderHeroWrapper>
             <Header toggleBurgerMenu={toggleBurgerMenu} isOpen={isBurgerMenuOpen} />

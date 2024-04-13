@@ -8,7 +8,7 @@ import { scrollToSection } from '../../utils/scrollToSection';
 import { BurgerMenuWrapper, NavItemLink, NavList, Span } from './BurgerMenu.styled';
 
 const BurgerMenu = ({ isOpen, toggle }) => {
-  const isSmallScreen = useMediaQuery('(max-width: 479px)');
+  const isMediumScreen = useMediaQuery('(max-width: 767px)');
 
   const handleClick = id => {
     scrollToSection(id);
@@ -19,7 +19,7 @@ const BurgerMenu = ({ isOpen, toggle }) => {
     from: {
       opacity: 0,
       zIndex: 0,
-      transform: isSmallScreen ? 'translateX(-200px)' : 'translateX(-100px)',
+      transform: isMediumScreen ? 'translateX(-200px)' : 'translateX(-100px)',
     },
     to: {
       opacity: 1,
