@@ -12,6 +12,7 @@ const SliderBtns = ({ isBeginning, isEnd, sliderNumber, previous, next, isAllSli
             onClick={previous}
             disabled={isBeginning}
             type="button"
+            aria-label="Button previous"
           >
             Prev
           </Btn>
@@ -20,6 +21,7 @@ const SliderBtns = ({ isBeginning, isEnd, sliderNumber, previous, next, isAllSli
             onClick={next}
             disabled={isEnd}
             type="button"
+            aria-label="Button next"
           >
             Next
           </Btn>

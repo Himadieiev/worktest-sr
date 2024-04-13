@@ -21,7 +21,7 @@ const MindMapItem = ({ item }) => {
               scrollToSection('start');
             }
           }}
-          aria-label="Mage Page Link"
+          aria-label="Up Page Link"
         >
           <ArrowIconStyled aria-label="Arrow Icon" />
           <div>
