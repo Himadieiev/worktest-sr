@@ -4,6 +4,7 @@ import heroImgMob from '../../assets/images/hero-mob.png';
 import heroImgTab from '../../assets/images/hero-tab.png';
 import heroImgDesk from '../../assets/images/hero-desk.png';
 import { scrollToSection } from '../../utils/scrollToSection';
+import textContent from '../../constants/textContent.json';
 
 import {
   Button,
@@ -39,20 +40,20 @@ const Hero = () => {
 
   return (
     <HeroWrapper>
-      <TextOne>diD yOu seE iT ?</TextOne>
+      <TextOne>{textContent.hero_1}</TextOne>
       <MainTitle>
         <span>YACHT </span>
         <span>APES</span>
       </MainTitle>
-      <TextTwo>Apes aRe eveRywhere</TextTwo>
+      <TextTwo>{textContent.hero_2}</TextTwo>
       <ImageStyled src={imgSrc} alt="nft-monkey" />
       <Wrapper>
         <Button type="button" onClick={() => scrollToSection('mint')}>
           Meet Apes
         </Button>
         <TextThree>
-          <span> </span>Yacht Ape is a collection of unique digital apes that you can own in NFT
-          format
+          <span> </span>
+          {textContent.hero_3}
         </TextThree>
       </Wrapper>
     </HeroWrapper>

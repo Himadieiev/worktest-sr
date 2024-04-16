@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 
 import Title from '../Common/Title/Title';
 import { validateSchema } from '../../utils/validateSchema';
+import textContent from '../../constants/textContent.json';
 
 import {
   Btn,
@@ -30,9 +31,7 @@ const ContactUs = () => {
         <Title>Are you in?</Title>
         <TextWrapper>
           <CrossIconStyled aria-label="Decor Element" />
-          <Text>
-            Join the YACHT APE community to be one of the first to receive our limited edition NFT
-          </Text>
+          <Text>{textContent.contact}</Text>
         </TextWrapper>
         <Formik
           initialValues={{ discord: '', wallet: '' }}
